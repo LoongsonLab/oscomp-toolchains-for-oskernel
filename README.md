@@ -3,9 +3,15 @@
 
 ## 说明
 
+### gcc-8.3.0
 gcc-8.3.0-loongarch64-linux-gnu-rc1.1.novec.tgz 为LoongArch64的交叉编译器，
 里面集成了openssl的库。此工具链是**非向量版本**。
 
+### gcc-13.2.0
+在Release中下载gcc-13.2.0-loongarch64-linux-gnu-nw.tgz， 其是新世界的交叉编译器。
+
+
+### 如何使用
 解压后，设置好环境变量即可使用：
 
 ```shell
