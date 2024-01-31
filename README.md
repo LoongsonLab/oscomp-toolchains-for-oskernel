@@ -29,6 +29,11 @@ loongarch64-linux-gnu-gcc main.c -o mian -static
 
 ```
 
+```shell
+
+musl-gcc main.c -o mian -static
+
+```
 
 
 
