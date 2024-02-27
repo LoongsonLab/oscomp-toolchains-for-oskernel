@@ -74,12 +74,16 @@ musl-loongarch64-1.2.2是LoongArch64的musl c库。它提供了类似于glibc的
 ### 6. 如何使用musl libc库
 musl库只是一个c环境执行库，如果想要使用它，则需要上述的交叉编译器支持。
 
-首先将musl-loongarch64-1.2.2.tgz解压到/opt/musl-loongarch64-1.2.2
->**注意：必须解压到/opt/下，其内部某些文件依赖此目录**
-
+首先将musl-loongarch64-1.2.2.tgz解压，然后设置环境变量。
 ```shell
+## 解压
+tar zxf musl-loongarch64-1.2.2.tgz
+
+## 进入到musl-loongarch64-1.2.2 并且执行设置脚本
+cd musl-loongarch64-1.2.2 && ./setup
+
 ## 在.bashrc中增加环境变量
-export PATH=${PATH}:/opt/musl-loongarch64-1.2.2/bin
+export PATH=${PATH}:/xxx/xxx/musl-loongarch64-1.2.2/bin
 
 #可以使用musl libc库
 loongarch64-linux-musl-gcc main.c -o main -static
