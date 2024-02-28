@@ -22,7 +22,7 @@ rustup component add llvm-tools
 
 ### 2. GCC交叉编译器
 
-在Release中下载gcc-13.2.0-loongarch64-linux-gnu-nw.tgz， 这是X86_64平台的LoongArch GCC编译器，
+在Release中下载gcc-13.2.0-loongarch64-linux-gnu.tgz， 这是X86_64平台的LoongArch GCC编译器，
 在x86_64平台执行，可生产LoongArch架构代码。可以编译C，C++，Objc程序等。
 
 
@@ -30,12 +30,12 @@ rustup component add llvm-tools
 ### 3. 如何编译C程序
 
 ```shell
-wget https://github.com/LoongsonLab/oscomp-toolchains-for-oskernel/releases/download/gcc-13.2.0-loongarch64/gcc-13.2.0-loongarch64-linux-gnu-nw.tgz
+wget https://github.com/LoongsonLab/oscomp-toolchains-for-oskernel/releases/download/gcc-13.2.0-loongarch64/gcc-13.2.0-loongarch64-linux-gnu.tgz
 
-tar zxf gcc-13.2.0-loongarch64-linux-gnu-nw.tgz
+tar zxf gcc-13.2.0-loongarch64-linux-gnu.tgz
 
-# 在.bashrc中增加交叉编译器路径。假设当前路径为：/opt/gcc-13.2.0-loongarch64-linux-gnu-nw
-export PATH=${PATH}:/opt/gcc-13.2.0-loongarch64-linux-gnu-nw/bin
+# 在.bashrc中增加交叉编译器路径。假设当前路径为：/opt/gcc-13.2.0-loongarch64-linux-gnu
+export PATH=${PATH}:/opt/gcc-13.2.0-loongarch64-linux-gnu/bin
 
 # 如果配置正确，输入如下命令
 loongarch64-linux-gnu-gcc -v
