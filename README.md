@@ -97,7 +97,18 @@ main: ELF 64-bit LSB executable, LoongArch, version 1 (SYSV), statically linked,
 ```
 
 
+### 工具列表
 
+本仓库所有工具如下表所示：
+
+| 工具名称    | 版本 | 说明    |   文件名称 |
+|------|:------:|:------|:------|
+|GCC | 13.2.0 | 支持硬件浮点| gcc-13.2.0-loongarch64-linux-gnu.tgz|
+|GCC | 13.2.0 | 支持软浮点| gcc-13.2.0-loongarch64-linux-gnu-sf.tgz|
+|GCC | 8.3.0  | 支持软浮点，适用于32版本| gcc-8.3.0-loongarch32r-linux-gnusf.tgz|
+|MUSL | 1.2.2 | C库 | musl-loongarch64-1.2.2.tgz|
+|Qemu | 8.2.50 | 模拟器 | qemu.tgz|
+|GDB | 12.0.50 | 执行于x86_64的loongarch64-gdb | loongarch64-linux-gnu-gdb.tgz|
 
 
 
