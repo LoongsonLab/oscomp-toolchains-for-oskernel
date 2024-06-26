@@ -96,6 +96,32 @@ main: ELF 64-bit LSB executable, LoongArch, version 1 (SYSV), statically linked,
 
 ```
 
+### 7. 如何使用Clang
+下载Clang交叉编译器
+```shell
+wget https://github.com/LoongsonLab/oscomp-toolchains-for-oskernel/releases/download/clang-19.0.0/clang-19.0.0-loongarch64.tar.gz
+
+```
+
+编译成软浮点程序（支持生成静态可执行文件）
+```shell
+# 编译C++程序
+clang-19.0.0/bin/loongarch64-linux-gnusf-clang++ main.cc -o maincc
+
+# 编译C程序
+clang-19.0.0/bin/loongarch64-linux-gnusf-clang main.c -o mainc
+```
+
+
+编译成硬浮点程序（支持生成静态可执行文件）
+```shell
+# 编译C++程序
+clang-19.0.0/bin/loongarch64-linux-gnu-clang++ main.cc -o maincc
+
+# 编译C程序
+clang-19.0.0/bin/loongarch64-linux-gnu-clang main.c -o mainc
+```
+
 
 ### 工具列表
 
@@ -103,6 +129,7 @@ main: ELF 64-bit LSB executable, LoongArch, version 1 (SYSV), statically linked,
 
 | 工具名称    | 版本 | 说明    |   文件名称 |
 |------|:------:|:------|:------|
+|Clang | 19.0.0 | 支持硬件浮点和软浮点，也支持loongarch32，但是工具没集成32位的库| clang-19.0.0-loongarch64.tar.gz|
 |GCC | 13.2.0 | 支持硬件浮点| gcc-13.2.0-loongarch64-linux-gnu.tgz|
 |GCC | 13.2.0 | 支持软浮点| gcc-13.2.0-loongarch64-linux-gnu-sf.tgz|
 |GCC | 8.3.0  | 支持软浮点，适用于32版本| gcc-8.3.0-loongarch32r-linux-gnusf.tgz|
