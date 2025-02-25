@@ -136,6 +136,8 @@ clang-19.0.0/bin/loongarch64-linux-gnu-clang main.c -o mainc
 |MUSL | 1.2.2 | C库 | musl-loongarch64-1.2.2.tgz|
 |Qemu | 8.2.50 | 模拟器 | qemu.tgz|
 |GDB | 12.0.50 | 执行于x86_64的loongarch64-gdb | loongarch64-linux-gnu-gdb.tgz|
+|MUSL|1.2.5  |C库（默认生成向量） | loongarch64-linux-musl-cross.tgz
+|MUSL|1.2.5  |C库（默认不生成向量） | loongarch64-linux-musl-cross-novec.tgz
 
 
 
