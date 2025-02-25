@@ -140,4 +140,4 @@ clang-19.0.0/bin/loongarch64-linux-gnu-clang main.c -o mainc
 |MUSL|1.2.5  |C库（默认不生成向量） | loongarch64-linux-musl-cross-novec.tgz
 
 
-
+注：部分二进制可执文件在Releases页面下载。
